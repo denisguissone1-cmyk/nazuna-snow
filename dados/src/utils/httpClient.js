@@ -7,7 +7,7 @@
  * - Timeouts configuráveis
  * - Headers padrão para APIs
  * 
- * @author Hiudy
+ * @author snowxz
  * @version 1.0.0
  */
 

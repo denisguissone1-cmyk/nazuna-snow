@@ -95,7 +95,7 @@ async function dl(url) {
     }
 
     const result = {
-      criador: 'Hiudy',
+      criador: 'snowxz',
       data: results,
       count: results.length
     };

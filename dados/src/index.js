@@ -15407,7 +15407,7 @@ Exemplo: ${prefix}tradutor espanhol | Olá mundo! ✨`);
         try {
           if (!isOwner || isOwner && isSubOwner) return reply("🚫 Apenas o Dono principal pode utilizar esse comando!");
           if (!fs.existsSync(pathz.join(__dirname, '..', 'database', 'updateSave.json'))) return reply('❌ Sua versão não tem suporte a esse sistema ainda.');
-          const AtualCom = await axios.get('https://api.github.com/repos/hiudyy/nazuna/commits?per_page=1', {
+          const AtualCom = await axios.get('https://api.github.com/repos/snowxz/nazuna/commits?per_page=1', {
             headers: {
               Accept: 'application/vnd.github+json'
             }
@@ -15416,7 +15416,7 @@ Exemplo: ${prefix}tradutor espanhol | Olá mundo! ✨`);
             total
           } = JSON.parse(fs.readFileSync(pathz.join(__dirname, '..', 'database', 'updateSave.json'), 'utf-8'));
           if (AtualCom > total) {
-            const TextZin = await VerifyUpdate('hiudyy/nazuna', AtualCom - total);
+            const TextZin = await VerifyUpdate('snowxz/nazuna', AtualCom - total);
             await reply(TextZin);
           } else {
             await reply('Você ja esta utilizando a versão mais recente da bot.');
@@ -18158,7 +18158,7 @@ Exemplo: ${prefix}tradutor espanhol | Olá mundo! ✨`);
       case 'encurtalink':
       case 'tinyurl':
         try {
-          if (!q) return reply(`❌️ *Forma incorreta, use está como exemplo:* ${prefix + command} https://instagram.com/hiudyyy_`);
+          if (!q) return reply(`❌️ *Forma incorreta, use está como exemplo:* ${prefix + command} https://instagram.com/snowxz`);
           const shortResponse = await axios.post("https://spoo.me/api/v1/shorten", { 
             long_url: q, 
             alias: `nazuna_${Math.floor(10000 + Math.random() * 90000)}` 
@@ -19588,7 +19588,7 @@ case 'facebookdl':
         try {
           await reply('📦 Baixando o código-fonte do bot... Aguarde!');
           
-          const zipResponse = await axios.get('https://github.com/hiudyy/nazuna/archive/refs/heads/main.zip', {
+          const zipResponse = await axios.get('https://github.com/snowxz/nazuna/archive/refs/heads/main.zip', {
             responseType: 'arraybuffer',
             timeout: 60000 // 60 segundos de timeout
           });
@@ -19601,7 +19601,7 @@ case 'facebookdl':
             document: Buffer.from(zipResponse.data),
             fileName: 'nazuna-bot.zip',
             mimetype: 'application/zip',
-            caption: `📦 *Código-fonte do ${nomebot}*\n\n📖 Leia a documentação no repositório para entender melhor como instalar:\n🔗 https://github.com/hiudyy/nazuna\n\n⚠️ *Importante:* Certifique-se de ter Node.js instalado e siga os passos do README.md!`
+            caption: `📦 *Código-fonte do ${nomebot}*\n\n📖 Leia a documentação no repositório para entender melhor como instalar:\n🔗 https://github.com/snowxz/nazuna\n\n⚠️ *Importante:* Certifique-se de ter Node.js instalado e siga os passos do README.md!`
           }, { quoted: info });
           
         } catch (e) {
@@ -19612,7 +19612,7 @@ case 'facebookdl':
             ? '❌ Tempo de conexão esgotado. Tente novamente.'
             : '❌ Erro ao baixar o arquivo.';
           
-          await reply(`${errorMsg}\n\nTente acessar diretamente:\n🔗 https://github.com/hiudyy/nazuna`);
+          await reply(`${errorMsg}\n\nTente acessar diretamente:\n🔗 https://github.com/snowxz/nazuna`);
         }
         break;
       case 'gitbot':
@@ -19629,8 +19629,8 @@ case 'facebookdl':
             const githubHeaders = { 'Accept': 'application/vnd.github+json' };
             
             Promise.all([
-              axios.get('https://api.github.com/repos/hiudyy/nazuna', { headers: githubHeaders }),
-              axios.get('https://api.github.com/repos/hiudyy/nazuna/commits?per_page=1', { headers: githubHeaders })
+              axios.get('https://api.github.com/repos/snowxz/nazuna', { headers: githubHeaders }),
+              axios.get('https://api.github.com/repos/snowxz/nazuna/commits?per_page=1', { headers: githubHeaders })
             ]).then(([repoResponse, commitsResponse]) => {
               const repo = repoResponse.data;
               
@@ -19697,7 +19697,7 @@ case 'facebookdl':
               reply(gitInfo);
             }).catch((e) => {
               console.error('Erro ao buscar info do GitHub:', e);
-              reply(`❌ Erro ao buscar informações. Acesse diretamente:\n🔗 https://github.com/hiudyy/nazuna\n📞 Suporte: wa.me/553391967445`);
+              reply(`❌ Erro ao buscar informações. Acesse diretamente:\n🔗 https://github.com/snowxz/nazuna\n📞 Suporte: wa.me/553391967445`);
             });
           });
         } catch (e) {
@@ -21337,7 +21337,7 @@ Precisa de ajuda? Entre em contato:
       case 'nome-dono':
         try {
           if (!isOwner) return reply("Este comando é exclusivo para o meu dono!");
-          if (!q) return reply(`Por favor, digite o novo nome do dono.\nExemplo: ${prefix}${command} Hiudy`);
+          if (!q) return reply(`Por favor, digite o novo nome do dono.\nExemplo: ${prefix}${command} snowxz`);
           let config = JSON.parse(fs.readFileSync(CONFIG_FILE));
           config.nomedono = q;
           writeJsonFile(CONFIG_FILE, config);
@@ -23680,10 +23680,10 @@ ${prefix}togglecmdvip premium_ia off`);
         try {
           const TextinCriadorInfo = `╭━━━⊱ 👨‍💻 *CRIADOR* 👨‍💻 ⊱━━━╮
 │
-│ 💎 *Nome:* Hiudy
+│ 💎 *Nome:* snowxz
 │ 📱 *WhatsApp:* wa.me/553391967445
-│ 🌐 *GitHub:* github.com/hiudyy
-│ 📸 *Instagram:* instagram.com/hiudyyy_
+│ 🌐 *GitHub:* github.com/snowxz
+│ 📸 *Instagram:* instagram.com/snowxz
 │
 ╰━━━━━━━━━━━━━━━━━━━━━━━━╯`;
           await reply(TextinCriadorInfo);
@@ -24212,7 +24212,7 @@ ${prefix}togglecmdvip premium_ia off`);
     let author = "";
     let packname = "";
     if (!q) {
-      return reply(`Formato errado, utilize:\n${prefix}${command} Autor/Pack\nEx: ${prefix}${command} By:/Hiudy`);
+      return reply(`Formato errado, utilize:\n${prefix}${command} Autor/Pack\nEx: ${prefix}${command} By:/snowxz`);
     }
     if (q.includes("/")) {
       author = q.split("/")[0] || "";
@@ -24222,7 +24222,7 @@ ${prefix}togglecmdvip premium_ia off`);
       author = "";
     }
     if (!packname) {
-      return reply(`Formato errado, utilize:\n${prefix}${command} Autor/Pack\nEx: ${prefix}${command} By:/Hiudy`);
+      return reply(`Formato errado, utilize:\n${prefix}${command} Autor/Pack\nEx: ${prefix}${command} By:/snowxz`);
     }
     const encmediats = await getFileBuffer(
       info.message.extendedTextMessage.contextInfo.quotedMessage.stickerMessage,
@@ -24246,7 +24246,7 @@ ${prefix}togglecmdvip premium_ia off`);
     let author = "";
     let pack = "";
     if (!q) {
-      return reply(`Formato errado, utilize:\n${prefix}${command} Autor/Pack\nEx: ${prefix}${command} By:/Hiudy`);
+      return reply(`Formato errado, utilize:\n${prefix}${command} Autor/Pack\nEx: ${prefix}${command} By:/snowxz`);
     }
     if (q.includes("/")) {
       author = q.split("/")[0] || "";
@@ -24256,7 +24256,7 @@ ${prefix}togglecmdvip premium_ia off`);
       author = "";
     }
     if (!pack) {
-      return reply(`Formato errado, utilize:\n${prefix}${command} Autor/Pack\nEx: ${prefix}${command} By:/Hiudy`);
+      return reply(`Formato errado, utilize:\n${prefix}${command} Autor/Pack\nEx: ${prefix}${command} By:/snowxz`);
     }
   const filePath = pathz.join(USERS_DIR, 'take.json');
     const dataTake = fs.existsSync(filePath) ? JSON.parse(fs.readFileSync(filePath, 'utf-8')) : {};
@@ -30581,7 +30581,7 @@ ${prefix}wl.add @usuario | antilink,antistatus`);
     await reply(
       `🎉 Aqui está o link do produto no evento como GRATUITO:\n\n` +
       `⚠️ Atenção: Nem todos os anúncios funcionam com esse método. Se não funcionar com este link, tente outro.\n\n` +
-      `💡 Esse sistema foi criado por mim (Hiudy) e, até hoje, não vi ninguém oferecendo algo assim. Aproveite!\n\n` +
+      `💡 Esse sistema foi criado por mim (snowxz) e, até hoje, não vi ninguém oferecendo algo assim. Aproveite!\n\n` +
       `${KKMeMamaTemu}`
     );
   } catch (e) {

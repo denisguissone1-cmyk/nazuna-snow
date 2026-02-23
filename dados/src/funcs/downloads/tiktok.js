@@ -45,7 +45,7 @@ const TIKWM_HEADERS = {
  */
 function formatDownloadResponse(data) {
   const response = {
-    criador: 'Hiudy'
+    criador: 'snowxz'
   };
 
   if (data.music_info?.play) {
@@ -156,7 +156,7 @@ async function search(query) {
     const randomVideo = videos[Math.floor(Math.random() * videos.length)];
 
     const result = {
-      criador: 'Hiudy',
+      criador: 'snowxz',
       title: randomVideo.title,
       urls: [randomVideo.play],
       type: 'video',

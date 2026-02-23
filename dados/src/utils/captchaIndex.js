@@ -5,7 +5,7 @@
  * mapeando userId -> groupId, evitando varredura de todos os arquivos
  * de grupo a cada mensagem privada.
  * 
- * @author Hiudy
+ * @author snowxz
  * @version 1.0.0
  */
 

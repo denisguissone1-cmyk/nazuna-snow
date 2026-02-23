@@ -103,7 +103,7 @@ async function search(query) {
     }
 
     const result = {
-      criador: 'Hiudy',
+      criador: 'snowxz',
       type: 'image',
       mime: 'image/jpeg',
       query: query,
@@ -205,7 +205,7 @@ async function dl(url) {
     }
 
     const result = {
-      criador: 'Hiudy',
+      criador: 'snowxz',
       pin_id: pinId,
       type: videos ? 'video' : 'image',
       mime: videos ? 'video/mp4' : 'image/jpeg',

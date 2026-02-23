@@ -737,7 +737,7 @@ async function search(query) {
     const timestamp = video.timestamp || formatDuration(seconds);
 
     const result = {
-      criador: 'Hiudy',
+      criador: 'snowxz',
       data: {
         videoId: video.videoId || video.id || '',
         url: video.url,
@@ -797,7 +797,7 @@ async function mp3(url, _quality = 'mp3') {
     }
 
     const downloadResult = {
-      criador: 'Hiudy',
+      criador: 'snowxz',
       buffer: result.buffer,
       title: result.title,
       thumbnail: result.thumbnail,
@@ -846,7 +846,7 @@ async function mp4(url, quality = '360p') {
     }
 
     const downloadResult = {
-      criador: 'Hiudy',
+      criador: 'snowxz',
       buffer: result.buffer,
       title: result.title,
       thumbnail: result.thumbnail,

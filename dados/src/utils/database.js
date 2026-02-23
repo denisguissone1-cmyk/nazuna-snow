@@ -326,7 +326,7 @@ ensureJsonFileExists(MSGBOTON_FILE, {
 
 Estou online e pronta para uso! 🤗💖
 
-Muito obrigada por ter me escolhido! Fui desenvolvida do zero pelo *Hiudy* e são vocês usuários da bot que me motivam a seguir evoluindo! 🌸💕
+Muito obrigada por ter me escolhido! Fui desenvolvida do zero pelo *snowxz* e são vocês usuários da bot que me motivam a seguir evoluindo! 🌸💕
 
 Espero que você goste da bot! ✨
 
@@ -504,7 +504,7 @@ const loadMsgBotOn = () => {
 
 Estou online e pronta para uso! 🤗💖
 
-Muito obrigada por ter me escolhido! Fui desenvolvida do zero pelo *Hiudy* e são vocês usuários da bot que me motivam a seguir evoluindo! 🌸💕
+Muito obrigada por ter me escolhido! Fui desenvolvida do zero pelo *snowxz* e são vocês usuários da bot que me motivam a seguir evoluindo! 🌸💕
 
 Espero que você goste da bot! ✨
 

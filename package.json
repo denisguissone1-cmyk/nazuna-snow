@@ -1,7 +1,7 @@
 {
     "name": "nazuna",
     "version": "8.0.0",
-    "description": "Bot de whatsapp criada por hiudy",
+    "description": "Bot de whatsapp criada por snowxz",
     "type": "module",
     "main": "dados/src/connect.js",
     "scripts": {
@@ -13,10 +13,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/hiudyy/nazuna.git"
+        "url": "git+https://github.com/snowxz/nazuna.git"
     },
     "homepage": "https://cognima.com.br",
-    "author": "Hiudy",
+    "author": "snowxz",
     "license": "ISC",
     "dependencies": {
         "@hapi/boom": "^10.0.1",
